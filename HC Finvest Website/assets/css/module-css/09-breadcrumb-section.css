@@ -1,0 +1,179 @@
+﻿/*** 
+=============================================
+    Breadcrumb style1
+=============================================
+***/
+.breadcrumb-style1 {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: var(--thm-border-radius);
+    background: rgb(0, 2, 19);
+    /* background: linear-gradient(40deg, rgba(0, 2, 19, 1) 25%, rgba(5, 22, 140, 1) 40%, */
+            /* rgba(0, 2, 19, 1) 75%); */
+    z-index: 10;
+}
+
+.breadcrumb-style1__inner {
+    position: relative;
+    display: block;
+    margin-top: 170px;
+}
+
+.breadcrumb-style1-bg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    opacity: 0.55;
+    background-attachment: scroll;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.breadcrumb-style1 .inner-content {
+    position: relative;
+    display: block;
+    padding: 154px 0px 152px;
+    text-align: center;
+}
+
+.breadcrumb-style1 .title {
+    position: relative;
+    display: block;
+    margin-bottom: 0px;
+    z-index: 1;
+}
+
+.breadcrumb-style1 .title h2 {
+    color: var(--thm-white);
+    font-size: 60px;
+    line-height: 1.0em;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.breadcrumb-menu {
+    position: absolute;
+    left: 0;
+    bottom: 32px;
+}
+
+.breadcrumb-menu ul {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb-menu ul li {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    color: var(--thm-body-font-color-2);
+    font-size: 18px;
+    line-height: 28px;
+    font-family: var(--thm-font);
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.breadcrumb-menu ul li+li {
+    margin-left: 7px;
+}
+
+.breadcrumb-menu ul li a {
+    color: var(--thm-body-font-color-2);
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+}
+
+.breadcrumb-menu ul li a:hover,
+.breadcrumb-menu ul li.active {
+    color: var(--thm-white);
+}
+
+.breadcrumb-menu ul li span {
+    color: var(--thm-body-font-color-2);
+    font-size: 10px;
+    margin-top: 1px;
+}
+
+/* Smart Layout for Background Decorative Icons */
+.banner-icons-overlay {
+    position: absolute !important;
+    top: 40px !important; /* Forces icons to stay at the very top */
+    left: 0;
+    width: 100%;
+    height: auto !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    justify-content: center;
+    gap: 50px;
+    opacity: 0.3; /* Increased for better visibility as requested */
+    pointer-events: none;
+    z-index: 1;
+}
+
+.banner-icons-overlay .icon-circle {
+    width: 130px;
+    height: 130px;
+    border: 3px solid #ffffff; /* Thicker for more "shine" */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 500ms ease;
+}
+
+.banner-icons-overlay .icon-circle i {
+    font-size: 60px;
+    color: #ffffff;
+}
+
+.banner-icons-overlay .icon-circle.large {
+    width: 160px; /* Slightly smaller to fit better */
+    height: 160px;
+}
+
+.banner-icons-overlay .icon-circle {
+    width: 130px;
+    height: 130px;
+}
+
+.breadcrumb-style1__inner .title h4 {
+    color: #ffffff !important;
+    opacity: 0.95 !important;
+    font-weight: 500;
+    margin-top: 15px;
+    letter-spacing: 0.5px;
+    text-shadow: 0px 4px 12px rgba(0,0,0,0.9);
+}
+
+.banner-icons-overlay .icon-circle.large i {
+    font-size: 72px;
+}
+
+@media (max-width: 767px) {
+    .banner-icons-overlay {
+        gap: 20px;
+        top: 20px !important;
+    }
+    .banner-icons-overlay .icon-circle {
+        width: 80px;
+        height: 80px;
+    }
+    .banner-icons-overlay .icon-circle i {
+        font-size: 32px;
+    }
+    .banner-icons-overlay .icon-circle.large {
+        width: 100px;
+        height: 100px;
+    }
+    .banner-icons-overlay .icon-circle.large i {
+        font-size: 40px;
+    }
+}
