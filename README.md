@@ -69,5 +69,11 @@ When contributing to this repository, please adhere to the following best practi
 *   **No Patchwork**: Solve the root cause of UI/UX issues rather than applying temporary CSS hacks.
 *   **Asset Management**: Keep all new images and videos within the appropriate `assets/` subdirectories and ensure they are properly compressed.
 
+## 📱 Connect With Us
+
+Stay updated with our latest news and features:
+*   **Instagram**: [@hcfinvest](https://www.instagram.com/hcfinvest/)
+*   **YouTube**: [@hcfinvest](https://www.youtube.com/@hcfinvest)
+
 ---
 *Copyright © 2026 HC Finvest. All rights reserved.*
