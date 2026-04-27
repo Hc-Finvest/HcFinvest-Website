@@ -63,7 +63,7 @@
 }
 
 .main-slider-style1__inner .top-box .title-box p {
-    color: #285934;
+    color: #1d768f;
 }
 
 .main-slider-style1__inner .top-box .img-box {
@@ -105,7 +105,7 @@
 }
 
 .main-slider-style1__inner .top-box .btn-box .btn-one::after {
-    background-color: #66f798;
+    background-color: #6bddd9;
     border: 1px solid var(--thm-black);
     border-radius: 30px;
 }

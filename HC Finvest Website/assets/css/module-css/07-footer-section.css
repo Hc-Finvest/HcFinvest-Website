@@ -924,7 +924,7 @@
 }
 
 .single-footer-widget-social li a:hover {
-    color: #103e33;
+    color: #1d768f;
 }
 
 .single-footer-widget-social li a span {
@@ -934,7 +934,7 @@
 }
 
 .single-footer-widget-social li a:hover span {
-    color: #103e33;
+    color: #1d768f;
 }
 
 
@@ -994,7 +994,7 @@
     right: 0;
     width: 0;
     height: 1px;
-    background-color: #033428;
+    background-color: #0a4a5c;
     transition: all 400ms linear;
     transition-delay: 0.1s;
 }
@@ -1004,7 +1004,7 @@
 }
 
 .footer-widget-links-style2 ul li a:hover {
-    color: #033428;
+    color: #0a4a5c;
 }
 
 .footer-widget-links-style2 ul li a i {
@@ -1016,7 +1016,7 @@
 }
 
 .footer-widget-links-style2 ul li a:hover i {
-    color: #033428;
+    color: #0a4a5c;
 }
 
 
@@ -1135,7 +1135,7 @@
 }
 
 .footer-bottom-style2__rating .point h4 {
-    color: #033428;
+    color: #0a4a5c;
     font-size: 18px;
     line-height: 28px;
     font-weight: 600;
@@ -1440,7 +1440,7 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #3dc654;
+    background-color: #6bddd9;
 }
 
 .single-footer-widget-style3-info .members-box p {

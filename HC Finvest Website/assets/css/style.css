@@ -35,21 +35,21 @@
 :root {
     --thm-font: "Hanken Grotesk", sans-serif;
     --thm-font-2: "Moderustic", sans-serif;
-    /* --thm-primary-color: #50fa7b; */
+    /* --thm-primary-color: #6bddd9; */
     /* --thm-primary-color-rgb: 80, 250, 123; */
     /* --thm-body-font-color: #646966; */
     /* --thm-body-font-color-2: #a4a6b4; */
     --thm-body-font-size: 18px;
     --thm-body-line-height: 28px;
     --thm-body-font-weight: 400;
-    /* --thm-heading-font-color: #051509; */
+    /* --thm-heading-font-color: #0b1a24; */
     --thm-white: #ffffff;
-    /* --thm-black: #051509; */
+    /* --thm-black: #0b1a24; */
     /* --thm-black-bg: #000420; */
     --thm-black-bg-2: #0a0e29;
     /* --thm-gray-bg: #f1f7f3; */
     /* --thm-border-color: #e1e7e3; */
-    --thm-border-color-1: #103e33;   
+    --thm-border-color-1: #1d768f;   
     --thm-border-radius: 10px;
 
     /* New added theme */
@@ -3635,7 +3635,7 @@ select:focus {
 .single-account-style2 .price-box .left .title {
     position: relative;
     display: block;
-    border-right: 1px solid #28574c;
+    border-right: 1px solid #1d768f;
     padding-right: 13px;
 }
 
@@ -3855,7 +3855,7 @@ select:focus {
 }
 
 .single-account-style2 .btn-box a.btn-one2:hover {
-    color: #1c4e42;
+    color: #1d768f;
 }
 
 
@@ -4590,7 +4590,7 @@ select:focus {
 }
 
 .platforms-style1-downlode-single .app-box a .icon-google-play .path3:before {
-    color: #00f076;
+    color: #6bddd9;
 }
 
 .platforms-style1-downlode-single .app-box a .icon-google-play .path4:before {
@@ -4643,11 +4643,11 @@ select:focus {
 }
 
 .platforms-style1__tab-btn--style2 ul {
-    background-color: #103e33;
+    background-color: #1d768f;
 }
 
 .platforms-style1-downlode-single--style2 {
-    background-color: #103e33;
+    background-color: #1d768f;
     border: 1px solid var(--thm-border-color-1);
 }
 
@@ -4664,7 +4664,7 @@ select:focus {
 }
 
 .platforms-style1-downlode-single--style2 .app-box a {
-    background-color: #1c4e42;
+    background-color: #1d768f;
 }
 
 
@@ -7113,7 +7113,7 @@ select:focus {
     height: 30px;
     border-radius: 50%;
     background-color: var(--thm-gray-bg);
-    color: #51b662;
+    color: #6bddd9;
     font-size: 18px;
     line-height: 0;
 }
@@ -7168,7 +7168,7 @@ select:focus {
 }
 
 .single-instrument-style2 .right-box .text-box p.color {
-    color: #51b662;
+    color: #6bddd9;
 }
 
 .single-instrument-style2 .right-box .text-box p.color2 {
@@ -7809,7 +7809,7 @@ select:focus {
     height: 30px;
     border-radius: 50%;
     background-color: var(--thm-gray-bg);
-    color: #51b662;
+    color: #6bddd9;
     font-size: 18px;
     line-height: 0;
 }
@@ -7860,7 +7860,7 @@ select:focus {
 }
 
 .pricing-list-style1__inner ul li .right-box .text-box p.color {
-    color: #51b662;
+    color: #6bddd9;
 }
 
 .pricing-list-style1__inner ul li .right-box .text-box p.color2 {
@@ -9123,7 +9123,7 @@ select:focus {
 }
 
 .single-currency-pairs-style1 .pricing-table tr td.spread.green {
-    color: #44aa20;
+    color: #6bddd9;
 }
 
 .single-currency-pairs-style1 .pricing-table tr td .chart-box {
@@ -9298,7 +9298,7 @@ select:focus {
 }
 
 .currency-pairs-style1-table .currency-table tbody tr td p.color {
-    color: #44aa20;
+    color: #6bddd9;
 }
 
 .currency-pairs-style1-table .currency-table tbody tr td p.color1 {
@@ -10845,7 +10845,7 @@ select:focus {
 
 .single-highlights-style2 .icon-box .icon-employee .path2:before,
 .single-highlights-style2 .icon-box .icon-employee .path3:before {
-    color: #00c339;
+    color: #6bddd9;
 }
 
 .single-highlights-style2 .icon-box .icon-employee .path4:before,
@@ -11777,7 +11777,7 @@ select:focus {
 .trade-calculator-box form .results-box .btn-box .btn-one::after {
     background: transparent;
     border-radius: 28px;
-    border: 1px solid #2d574d;
+    border: 1px solid #1d768f;
 }
 
 .trade-calculator-box form .results-box .btn-box .btn-one i {

@@ -585,7 +585,7 @@
 .single-products-style1 .content-box .bottom-box .stock .icon {
     position: relative;
     display: block;
-    color: #28C01B;
+    color: #6bddd9;
     font-size: 17px;
     line-height: 0;
     margin-right: 6px;
@@ -593,7 +593,7 @@
 }
 
 .single-products-style1 .content-box .bottom-box .stock p {
-    color: #28C01B;
+    color: #6bddd9;
 }
 
 
@@ -1013,7 +1013,7 @@
     justify-content: center;
     width: 60px;
     height: 30px;
-    background-color: #19b820;
+    background-color: #6bddd9;
     color: var(--thm-white);
     font-size: 16px;
 }
@@ -1181,7 +1181,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    color: #28C01B;
+    color: #6bddd9;
     font-size: 14px;
     cursor: pointer;
 }
