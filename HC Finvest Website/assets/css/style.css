@@ -1,4 +1,4 @@
-﻿/*--------------------------------------------------------------
+/*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # Utility
@@ -55,13 +55,13 @@
     /* New added theme */
     --thm-primary-color: #6bddd9;
     --thm-primary-color-rgb: 107, 221, 217;
-    --thm-body-font-color: #758180;
-    --thm-body-font-color-2: #b7ced4;
-    --thm-heading-font-color: #152c2b;
-    --thm-black: #152c2b;
+    --thm-body-font-color: #7d8c9f;
+    --thm-body-font-color-2: #aabec8;
+    --thm-heading-font-color: #0b162c;
+    --thm-black: #0b162c;
     --thm-black-bg: #125c72;
-    --thm-gray-bg: #f1f8f8;
-    --thm-border-color: #e2eaea;
+    --thm-gray-bg: #f0f4f8;
+    --thm-border-color: #e1e8ed;
 
     /* another one */
     
@@ -4028,7 +4028,7 @@ select:focus {
     align-items: center;
     cursor: pointer;
     justify-content: space-between;
-    border-bottom: 1px solid #e2eaea;
+    border-bottom: 1px solid #e1e8ed;
     padding: 15px 0px 15px;
 }
 
@@ -4479,6 +4479,7 @@ select:focus {
 
 .single-platforms-style1-tab .list-item li .icon img {
     width: auto;
+    filter: hue-rotate(60deg);
 }
 
 .single-platforms-style1-tab .list-item li p {
@@ -4507,12 +4508,14 @@ select:focus {
     margin-bottom: 30px;
 }
 
-.platforms-style1-downlode-single__bg {
+.platforms-style1-downlode-single__bg,
+.platforms-style2-downlode-single__bg {
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
+    background-image: radial-gradient(circle at top left, rgba(var(--thm-primary-color-rgb), 0.2), transparent 70%) !important;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -4523,6 +4526,7 @@ select:focus {
     top: -30px;
     left: 0;
     right: 0;
+    display: none !important;
 }
 
 .platforms-style1-downlode-single .shape2 {
@@ -4530,6 +4534,7 @@ select:focus {
     left: 0;
     bottom: -25px;
     right: 0;
+    display: none !important;
 }
 
 .platforms-style1-downlode-single .title {
@@ -5112,8 +5117,8 @@ select:focus {
 }
 
 .choose-style2 .row li {
-    border-bottom: 1px solid #e2eaea;
-    border-right: 1px solid #e2eaea;
+    border-bottom: 1px solid #e1e8ed;
+    border-right: 1px solid #e1e8ed;
 }
 
 .choose-style2 .row li:nth-child(3) {
@@ -5162,7 +5167,7 @@ select:focus {
     height: 60px;
     border-radius: 50%;
     background-color: transparent;
-    border: 1px solid #e2eaea;
+    border: 1px solid #e1e8ed;
     font-size: 30px;
     line-height: 0;
     transition: background-color 0.5s ease;
@@ -6941,7 +6946,7 @@ select:focus {
     font-family: var(--thm-font-2);
     font-weight: 700;
     text-transform: uppercase;
-    background-image: linear-gradient(0deg, #f1f8f8, #e4efef);
+    background-image: linear-gradient(0deg, #f0f4f8, #e4efef);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
@@ -7386,7 +7391,7 @@ select:focus {
 }
 
 .video-style1__content .duration-box .title h5 {
-    color: #758180;
+    color: #7d8c9f;
     font-size: 16px;
     line-height: 26px;
     font-weight: 500;
@@ -7455,7 +7460,7 @@ select:focus {
     display: block;
     padding-left: 20px;
     flex: 1;
-    border-left: 1px solid #e2eaea;
+    border-left: 1px solid #e1e8ed;
 }
 
 .video-style1__content .bottom-box .right-box p {
@@ -12378,7 +12383,7 @@ select:focus {
     position: relative;
     display: block;
     margin-bottom: 20px;
-    color: #b7ced4;
+    color: #aabec8;
     font-size: 20px;
     font-weight: 600;
     font-family: var(--thm-font-2);
@@ -12387,7 +12392,7 @@ select:focus {
 .single-trading-tools-style1__nextitem h3 {
     position: relative;
     display: block;
-    color: #b7ced4;
+    color: #aabec8;
     font-size: 20px;
     line-height: 32px;
     font-weight: 600;

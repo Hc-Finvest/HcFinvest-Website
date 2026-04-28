@@ -1,11 +1,11 @@
 ﻿:root {
     --thm-primary-color: #6bddd9;
     --thm-primary-color-rgb: 107, 221, 217;
-    --thm-body-font-color: #758180;
-    --thm-body-font-color-2: #b7ced4;
-    --thm-heading-font-color: #152c2b;
-    --thm-black: #152c2b;
+    --thm-body-font-color: #7d8c9f;
+    --thm-body-font-color-2: #aabec8;
+    --thm-heading-font-color: #0b162c;
+    --thm-black: #0b162c;
     --thm-black-bg: #125c72;
-    --thm-gray-bg: #f1f8f8;
-    --thm-border-color: #e2eaea;
+    --thm-gray-bg: #f0f4f8;
+    --thm-border-color: #e1e8ed;
 }

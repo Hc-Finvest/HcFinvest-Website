@@ -9,11 +9,12 @@ Welcome to the official **HC Finvest Website** repository! This project hosts th
 HC Finvest is a comprehensive financial portal providing users with information on various trading markets, account tiers, platform features, and educational resources. The website emphasizes visual excellence, smooth micro-animations, and a professional aesthetic aligning with the brand's premium identity.
 
 ### Key Features
-*   **Dynamic Markets Integration**: Dedicated pages for Forex, Commodities, Stocks, Cryptocurrencies, Indices, and Metals.
+*   **Dynamic Markets Integration**: Dedicated pages for Forex, Commodities, Stocks, Cryptocurrencies, Indices, and Metals, featuring simplified 3-column pricing tables.
 *   **Account Tiers Overview**: Detailed comparisons for Starter, Pro Trader, Zero Spread, and Elite accounts.
-*   **Modern Animations**: Utilizes GSAP, AOS, and custom pre-loaders for a seamless, interactive user experience.
-*   **Fully Responsive**: Built with Bootstrap, ensuring mobile-first compatibility across all devices.
-*   **Security & Compliance**: Integrated Privacy Policy and secure portal routing.
+*   **Brand Identity & Theme**: Fully cohesive premium visual aesthetic, migrating from legacy green gradients to a sleek cyan and dark blue (`#0b162c`) color palette across desktop and mobile components.
+*   **Modern Animations**: Utilizes GSAP, AOS, and highly performant pure CSS hover/glow effects for a seamless, interactive user experience.
+*   **Fully Responsive**: Built with Bootstrap, ensuring mobile-first compatibility across all devices, including themed mobile sidebars.
+*   **Security & Compliance**: Integrated Privacy Policy and secure portal routing, with all external trading platform links cleanly opening in new tabs.
 
 ## 🛠️ Technology Stack
 

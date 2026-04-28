@@ -1,4 +1,4 @@
-﻿/*
+/*
 ==========================
   Service style1 Css
 ==========================
@@ -208,8 +208,8 @@
     background-color: #1d768f;
     border-radius: var(--thm-border-radius);
     font-size: 40px;
-    transition: background-color 0.5s ease;
-    transition: all 0.5s ease;
+    transition: background-color 0.2s ease;
+    transition: all 0.2s ease;
     z-index: 1;
 }
 
@@ -280,8 +280,8 @@
     background-color: #1d768f;
     clip-path: polygon(0 0, 50% 100%, 100% 0);
     margin: 0 auto;
-    transition: background-color 0.5s ease;
-    transition: all 0.5s ease;
+    transition: background-color 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 .single-service-style1:hover .icon-box::before {
@@ -297,10 +297,17 @@
     bottom: 0;
     right: 0;
     opacity: 0;
+    background-color: var(--thm-primary-color);
+    border-radius: var(--thm-border-radius);
+    box-shadow: 0 0 30px 0 rgba(var(--thm-primary-color-rgb), 0.7);
     transform: translateY(-5px);
-    transition: transition 0.5s ease;
-    transition: all 0.5s ease;
+    transition: transition 0.2s ease;
+    transition: all 0.2s ease;
     z-index: -1;
+}
+
+.single-service-style1 .icon-box .overlay-bg img {
+    display: none;
 }
 
 .single-service-style1:hover .icon-box .overlay-bg {
