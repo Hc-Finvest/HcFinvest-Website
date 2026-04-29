@@ -9,7 +9,7 @@ $mail = new PHPMailer();
 $mail->isSMTP(); // Set mailer to use SMTP
 $mail->Host = 'steelthemes.com'; // Specify main and backup SMTP servers
 $mail->SMTPAuth = true; // Enable SMTP authentication
-$mail->Username = 'cform@steelthemes.com'; // SMTP username
+$mail->Username = 'support@heddgecapitals.com'; // SMTP username
 $mail->Password = 'AsDf12**'; // SMTP password
 $mail->SMTPSecure = true; // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465; // TCP port to connect to
@@ -18,24 +18,24 @@ $message = "";
 $status = "false";
 
 if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
- if( $_POST['form_name'] != '' AND $_POST['form_email'] != '' AND $_POST['form_subject'] != '' ) {
+ if( $_POST['form_email'] != '' ) {
 
- $name = $_POST['form_name'];
- $email = $_POST['form_email'];
- $subject = $_POST['form_subject'];
- $phone = $_POST['form_phone'];
- $message = $_POST['form_message'];
+ $name = isset($_POST['form_name']) ? $_POST['form_name'] : 'Subscriber/Lead';
+ $email = isset($_POST['form_email']) ? $_POST['form_email'] : (isset($_POST['email']) ? $_POST['email'] : '');
+ $subject = isset($_POST['form_subject']) ? $_POST['form_subject'] : 'New Message | Website Form';
+ $phone = isset($_POST['form_phone']) ? $_POST['form_phone'] : 'Not Provided';
+ $message = isset($_POST['form_message']) ? $_POST['form_message'] : 'No message provided.';
 
  $subject = isset($subject) ? $subject : 'New Message | Contact Form';
 
  $botcheck = $_POST['form_botcheck'];
 
- $toemail = 'templatecform@gmail.com'; // Your Email Address
- $toname = 'template_path'; // Your Name
+ $toemail = 'support@heddgecapitals.com'; // Your Email Address
+ $toname = 'Heddge Capitals Support'; // Your Name
 
  if( $botcheck == '' ) {
 
- $mail->SetFrom( $email , $name );
+ $mail->SetFrom( 'support@heddgecapitals.com' , 'Heddge Capitals Website' );
  $mail->AddReplyTo( $email , $name );
  $mail->AddAddress( $toemail , $toname );
  $mail->Subject = $subject;

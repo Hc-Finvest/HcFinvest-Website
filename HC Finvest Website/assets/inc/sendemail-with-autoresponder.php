@@ -10,7 +10,7 @@ $autoresponder = new PHPMailer();
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'just55.justhost.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'themeforest@ismail-hossain.me';                 // SMTP username
+$mail->Username = 'support@heddgecapitals.com';                 // SMTP username
 $mail->Password = 'AsDf12**';                           // SMTP password
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
@@ -30,12 +30,12 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 
 		$botcheck = $_POST['contact-form-botcheck'];
 
-        $toemail = 'spam.thememascot@gmail.com'; // Your Email Address
-        $toname = 'ThemeMascot'; // Your Name
+        $toemail = 'support@heddgecapitals.com'; // Your Email Address
+        $toname = 'Heddge Capitals Support'; // Your Name
 
 		if( $botcheck == '' ) {
 
-			$mail->SetFrom( $email , $name );
+			$mail->SetFrom( 'support@heddgecapitals.com' , 'Heddge Capitals Website' );
 			$mail->AddReplyTo( $email , $name );
 			$mail->AddAddress( $toemail , $toname );
 			$mail->Subject = $subject;
@@ -45,7 +45,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 			$autoresponder->AddAddress( $email , $name );
 			$autoresponder->Subject = 'We\'ve received your Email';
 
-			$ar_body = "Thank you for contacting us. We will reply within 24 hours.<br><br>Regards,<br>Your Company.";
+			$ar_body = "Thank you for contacting us. We will reply within 24 hours.<br><br>Regards,<br>Heddge Capitals Team.";
 
 			$name = isset($name) ? "Name: $name<br><br>" : '';
 			$email = isset($email) ? "Email: $email<br><br>" : '';
@@ -56,7 +56,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 
 			$body = "$name $email $phone $message $referrer";
 
-			$ar_body = "Thank you for contacting us. We will reply within 24 hours.<br><br>Regards,<br>Your Company.";
+			$ar_body = "Thank you for contacting us. We will reply within 24 hours.<br><br>Regards,<br>Heddge Capitals Team.";
 
 			$autoresponder->MsgHTML( $ar_body );
 			$mail->MsgHTML( $body );

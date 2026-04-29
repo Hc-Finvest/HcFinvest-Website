@@ -13248,3 +13248,178 @@ img[src*="mainlogo.jpeg"],
 /*--------------------------------------------------
 # End Css 
 ----------------------------------------------------*/
+
+/* ==========================================================================
+   Global Premium Image Frame — Corner Bracket Style
+   ========================================================================== */
+
+/* ── Base image styling ───────────────────────────────────── */
+.premium-image:not([src*="logo"]) {
+    border-radius: 20px 4px 20px 4px;
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.12),
+        0 24px 48px rgba(0, 0, 0, 0.06);
+    border: 1.5px solid rgba(var(--thm-primary-color-rgb), 0.35);
+    transition:
+        transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
+        box-shadow 0.4s ease,
+        border-color 0.4s ease;
+    position: relative;
+    z-index: 2;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.premium-image:not([src*="logo"]):hover {
+    transform: scale(1.025) translateY(-4px);
+    box-shadow:
+        0 16px 40px rgba(0, 0, 0, 0.18),
+        0 40px 80px rgba(0, 0, 0, 0.1);
+    border-color: var(--thm-primary-color);
+}
+
+/* ── Wrapper ────────────────────────────────────────────────── */
+.premium-image-wrap:has(> .premium-image:not([src*="logo"])) {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+/* ── Top-Left corner bracket (::before) ────────────────────── */
+.premium-image-wrap:has(> .premium-image:not([src*="logo"]))::before {
+    content: '';
+    position: absolute;
+    top: -9px;
+    left: -9px;
+    width: 32px;
+    height: 32px;
+    border-top: 2.5px solid var(--thm-primary-color);
+    border-left: 2.5px solid var(--thm-primary-color);
+    border-radius: 5px 0 0 0;
+    z-index: 5;
+    pointer-events: none;
+    opacity: 0.7;
+    transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* ── Bottom-Right corner bracket (::after) ──────────────────── */
+.premium-image-wrap:has(> .premium-image:not([src*="logo"]))::after {
+    content: '';
+    position: absolute;
+    bottom: -9px;
+    right: -9px;
+    width: 32px;
+    height: 32px;
+    border-bottom: 2.5px solid var(--thm-primary-color);
+    border-right: 2.5px solid var(--thm-primary-color);
+    border-radius: 0 0 5px 0;
+    z-index: 5;
+    pointer-events: none;
+    opacity: 0.7;
+    transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* ── Hover: brackets expand ──────────────────────────────────── */
+.premium-image-wrap:hover::before {
+    top: -14px;
+    left: -14px;
+    width: 44px;
+    height: 44px;
+    opacity: 1;
+}
+
+.premium-image-wrap:hover::after {
+    bottom: -14px;
+    right: -14px;
+    width: 44px;
+    height: 44px;
+    opacity: 1;
+}
+
+/* ── Exclude: circular market section images ─────────────────── */
+.single-market-style1 .img-box .premium-image,
+.single-market-style1 .img-box .premium-image:hover {
+    border-radius: 50% !important;
+    transform: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.single-market-style1 .img-box.premium-image-wrap::before,
+.single-market-style1 .img-box.premium-image-wrap::after {
+    display: none !important;
+}
+
+/* ── Exclude: testimonial avatar thumbnails ──────────────────── */
+.single-testimonial-style2 .img .premium-image,
+.single-testimonial-style2 .img .premium-image:hover {
+    border-radius: 50% !important;
+    transform: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.single-testimonial-style2 .img.premium-image-wrap::before,
+.single-testimonial-style2 .img.premium-image-wrap::after {
+    display: none !important;
+}
+
+/* Custom Footer Buttons Added by Antigravity */
+.footer-btn-box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 25px;
+    max-width: 220px;
+}
+
+.footer-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--thm-font-2);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.footer-btn.btn-signup {
+    background-color: var(--thm-primary-color);
+    color: #000;
+}
+
+.footer-btn.btn-signin {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--thm-white);
+}
+
+.footer-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.footer-btn.btn-signup:hover {
+    background-color: #fff;
+    color: var(--thm-primary-color);
+}
+
+.footer-btn.btn-signin:hover {
+    background-color: var(--thm-primary-color);
+    border-color: var(--thm-primary-color);
+    color: #000;
+}
+
+.footer-btn i {
+    font-size: 10px;
+    transition: transform 0.3s ease;
+}
+
+.footer-btn:hover i {
+    transform: translateX(3px);
+}

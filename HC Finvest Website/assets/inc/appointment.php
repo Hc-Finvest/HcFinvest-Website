@@ -10,7 +10,7 @@ $mail = new PHPMailer();
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'just55.justhost.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'themeforest@ismail-hossain.me';                 // SMTP username
+$mail->Username = 'support@heddgecapitals.com';                 // SMTP username
 $mail->Password = 'AsDf12**';                           // SMTP password
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
@@ -19,25 +19,25 @@ $message = "";
 $status = "false";
 
 if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
-    if( $_POST['form_name'] != '' AND $_POST['form_email'] != '' ) {
+    if( $_POST['form_email'] != '' ) {
 
-        $name = $_POST['form_name'];
+        $name = isset($_POST['form_name']) ? $_POST['form_name'] : 'Appointment Request';
         $email = $_POST['form_email'];
-        $message = $_POST['form_message'];
+        $message = isset($_POST['form_message']) ? $_POST['form_message'] : 'No message provided.';
 
         $subject = isset($subject) ? $subject : 'New Message | Appointment Form';
-        $phone = isset($_POST['form_phone']) ? $_POST['form_phone'] : '';
+        $phone = isset($_POST['form_phone']) ? $_POST['form_phone'] : 'Not Provided';
 
         $appontment_date = isset($_POST['form_appontment_date']) ? $_POST['form_appontment_date'] : '';
 
         $botcheck = $_POST['form_botcheck'];
 
-        $toemail = 'spam.thememascot@gmail.com'; // Your Email Address
-        $toname = 'ThemeMascot'; // Your Name
+        $toemail = 'support@heddgecapitals.com'; // Your Email Address
+        $toname = 'Heddge Capitals Support'; // Your Name
 
         if( $botcheck == '' ) {
 
-            $mail->SetFrom( $email , $name );
+            $mail->SetFrom( 'support@heddgecapitals.com' , 'Heddge Capitals Website' );
             $mail->AddReplyTo( $email , $name );
             $mail->AddAddress( $toemail , $toname );
             $mail->Subject = $subject;
