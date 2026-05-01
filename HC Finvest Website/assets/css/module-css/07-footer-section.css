@@ -1,4 +1,4 @@
-﻿/*** 
+/*** 
 =============================================
     Footer area style
 =============================================
@@ -379,7 +379,7 @@
     width: 52px;
     height: 52px;
     border-radius: 50%;
-    background-color: #0a0e29;
+    background-color: #f1f1f1;
     color: var(--thm-white);
     font-size: 20px;
     line-height: 0;
@@ -388,9 +388,40 @@
     transition: all 0.4s ease;
 }
 
+.footer-main-bottom__inner .left-box .icon-box a:nth-child(1) {
+    background-color: #007AFF; /* App Store Blue */
+}
+
+.footer-main-bottom__inner .left-box .icon-box a:nth-child(2) {
+    background-color: #ffffff; /* Google Play White background */
+}
+
+.footer-main-bottom__inner .left-box .icon-box a .icon-google-play .path1:before {
+    color: #ffce00;
+}
+.footer-main-bottom__inner .left-box .icon-box a .icon-google-play .path2:before {
+    color: #00d3ff;
+}
+.footer-main-bottom__inner .left-box .icon-box a .icon-google-play .path3:before {
+    color: #6bddd9;
+}
+.footer-main-bottom__inner .left-box .icon-box a .icon-google-play .path4:before {
+    color: #f63448;
+}
+
 .footer-main-bottom__inner .left-box .icon-box a:hover {
     color: var(--thm-black);
-    background-color: var(--thm-primary-color);
+    /* background-color removed to preserve brand colors */
+    transform: translateY(-3px);
+}
+
+.footer-main-bottom__inner .left-box .icon-box a:nth-child(1):hover {
+    background-color: #005bb5;
+}
+
+.footer-main-bottom__inner .left-box .icon-box a:nth-child(2):hover {
+    background-color: #f8f8f8;
+}
 
 }
 
