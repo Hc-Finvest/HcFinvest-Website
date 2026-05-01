@@ -1,30 +1,38 @@
-# Heddge Capitals Website
+# HC Finvest Website
 
-Official corporate website for **Heddge Capitals**, a premium financial services provider specializing in digital trading, forex, and wealth management.
+Official corporate website for **HC Finvest**, a premium financial services provider specializing in Forex, CFD trading, and global market access.
 
 ## Project Overview
-This repository contains the frontend and email infrastructure for the Heddge Capitals web platform. The site is designed with a high-end, professional aesthetic using a dark blue and teal brand palette.
+This repository contains the frontend and email infrastructure for the HC Finvest trading platform. The site is designed with a premium, high-end financial aesthetic, prioritizing performance, security, and a seamless user experience.
 
 ## Key Features
-- **Responsive Design**: Fully optimized for mobile, tablet, and desktop viewing.
-- **Centralized Email Routing**: All forms (Contact, Lead Gen, Newsletter) are routed through a standardized PHP backend to `support@heddgecapitals.com`.
+- **4-Tier Account System**: Integrated trading account options including Starter, Pro Trader, Zero Spread, and the new **Elite Account**.
+- **Responsive Design**: Fully optimized for mobile, tablet, and desktop viewing with advanced CSS animations.
+- **Brand Identity**: Authentic branding with official App Store and Google Play colors, premium typography, and a cohesive blue-teal color palette.
+- **Centralized Email Routing**: All forms (Contact, Newsletter, Account Inquiries) are routed through a standardized PHP backend to `support@heddgecapitals.com`.
 - **AJAX-Powered Forms**: Seamless submission experience without page reloads using jQuery validation and AJAX.
-- **Brand Identity**: Consistent use of Heddge Capitals branding, including circular social media icons and premium typography.
 
 ## Technical Structure
-- **Frontend**: HTML5, CSS3, JavaScript (jQuery).
-- **Backend**: PHP (PHPMailer) for email handling.
-- **Styling**: Modular CSS structure with theme-specific components.
-- **Assets**: Optimized financial imagery and SVG/Icon fonts for high performance.
+- **Frontend**: HTML5, CSS3 (Vanilla + Bootstrap), JavaScript (jQuery, AOS, Owl Carousel).
+- **Backend**: PHP (PHPMailer) for secure email handling.
+- **Styling**: Modular CSS architecture for scalable maintenance.
+- **Assets**: Optimized high-resolution financial imagery and vector-based icon systems.
+
+## Account Types
+The platform offers tailored solutions for all trading levels:
+1. **Starter a/c**: Low entry point ($50) for new traders.
+2. **Pro Trader a/c**: Enhanced spreads and leverage for growing portfolios.
+3. **Zero Spread a/c**: Raw spreads starting from 0.0 pips for high-volume traders.
+4. **Elite a/c**: Premium institutional-grade trading with exclusive commission rates.
 
 ## Form Submission Details
 All lead capture forms site-wide have been standardized to include:
-- `form_subject`: Identifies the specific source or intent of the submission (e.g., "Newsletter Subscription", "Trade Calculator Inquiry").
+- `form_subject`: Identifies the specific source or intent of the submission (e.g., "Consultation Request", "Newsletter Subscription").
 - **AJAX Integration**: Global handler in `assets/js/custom.js` for all forms pointing to `assets/inc/sendmail.php`.
 
 ## Maintenance & Audit
-A full audit of the email routing and form infrastructure is available in the `Documents/` directory:
+Project documentation and infrastructure audits are maintained in the `Documents/` directory:
 - [Global Email Audit](Documents/Global_Email_Audit.md)
 
 ---
-*Last Updated: 2026-04-29*
+*Last Updated: 2026-05-01*
