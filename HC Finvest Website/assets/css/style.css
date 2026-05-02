@@ -8633,9 +8633,9 @@ select:focus {
     left: 0;
     bottom: 0;
     right: 0;
-    background-image: -moz-linear-gradient(180deg, rgba(241, 247, 243, 0) 0%, rgb(241, 247, 243) 85%);
-    background-image: -webkit-linear-gradient(180deg, rgba(241, 247, 243, 0) 0%, rgb(241, 247, 243) 85%);
-    background-image: -ms-linear-gradient(180deg, rgba(241, 247, 243, 0) 0%, rgb(241, 247, 243) 85%);
+    /* background-image: -moz-linear-gradient(180deg, rgba(241, 247, 243, 0) 0%, rgb(241, 247, 243) 85%); */
+    /* background-image: -webkit-linear-gradient(180deg, rgba(241, 247, 243, 0) 0%, rgb(241, 247, 243) 85%); */
+    /* background-image: -ms-linear-gradient(180deg, rgba(241, 247, 243, 0) 0%, rgb(241, 247, 243) 85%); */
 }
 
 .trade-forex-style1__content {
