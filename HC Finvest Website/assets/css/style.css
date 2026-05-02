@@ -13423,3 +13423,37 @@ img[src*="mainlogo.jpeg"],
 .footer-btn:hover i {
     transform: translateX(3px);
 }
+
+
+/* ===== Horizontal Scroll for Account Cards in index page ===== */
+.account-scroll {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 10px;
+    scroll-behavior: smooth;
+}
+
+/* Hide scrollbar */
+.account-scroll::-webkit-scrollbar {
+    display: none;
+}
+.account-scroll {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Same width for all cards */
+.account-scroll > div {
+    flex: 0 0 420px;
+    max-width: 420px;
+}
+
+/* Optional smooth snap */
+.account-scroll {
+    scroll-snap-type: x mandatory;
+}
+.account-scroll > div {
+    scroll-snap-align: start;
+}
